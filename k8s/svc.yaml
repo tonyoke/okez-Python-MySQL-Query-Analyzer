@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: python-mysql-query-analyzer-service
-  namespace: okezee-python-mysql-query-analyzer
+  namespace: okezee-pythony-mysql-query-analyzer
 spec:
   selector:
     app: python-mysql-query-analyzer
