@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: python-mysql-query-analyzer-deployment
-  namespace: python-mysql-query-analyzer
+  namespace: okezee-pythony-mysql-query-analyzer
   labels:
     app: python-mysql-query-analyzer
 spec:
