@@ -1,0 +1,17 @@
+DROP TABLE IF EXISTS `myTable`;
+
+CREATE TABLE `myTable` (
+  `id` mediumint(8) unsigned NOT NULL auto_increment,
+  `postalZip` varchar(10) default NULL,
+  `name` varchar(255) default NULL,
+  `email` varchar(255) default NULL,
+  PRIMARY KEY (`id`)
+) AUTO_INCREMENT=1;
+
+INSERT INTO `myTable` (`postalZip`,`name`,`email`)
+VALUES
+  ("2361","Cadman Fuentes","praesent.eu@icloud.ca"),
+  ("7245","Kieran Kidd","magna@yahoo.org"),
+  ("8588","Deborah Phillips","sit.amet.diam@google.edu"),
+  ("775334","Imogene Sheppard","pellentesque.ut@google.org"),
+  ("3127 LM","Melanie Price","suscipit@icloud.org");

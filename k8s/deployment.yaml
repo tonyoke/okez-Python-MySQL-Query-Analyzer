@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: python-mysql-query-analyzer-deployment
+  namespace: python-mysql-query-analyzer
+  labels:
+    app: python-mysql-query-analyzer
+spec:
+  selector:
+    matchLabels:
+      app: python-mysql-query-analyzer
+  template:
+    metadata:
+      labels:
+        app: python-mysql-query-analyzer
+    spec:
+      containers:
+      - name: myapp
+        image: okezee/python-mysql-query-analyzer
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 5000
